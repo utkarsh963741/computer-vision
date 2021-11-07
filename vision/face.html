@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="../assets/img/favicon.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.css" crossorigin="anonymous">
+
+  <!--==================== UNICONS ====================-->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">     
+  <!--==================== CSS ====================-->
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <title>Computer Vision</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils@0.1/camera_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/control_utils@0.1/control_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils@0.1/drawing_utils.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/face_detection@0.0/face_detection.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="dark theme">
+
+  <!--==================== HEADER ====================-->
+  <header class="header" id="header">
+    <nav class="nav container">
+        <a href="#" class="nav__logo">Utkarsh</a>
+
+        <div class="nav__menu" id="nav-menu">
+            <ul class="nav__list grid">
+                <li class="nav__item">
+                    <a href="/" class="nav__link ">
+                        <i class="uil uil-estate nav__icon"></i> Home
+                    </a>
+                </li>
+                <li class="nav__item">
+                    <a href="./face.html" class="nav__link active-link">
+                        <i class="uil uil-smile nav__icon"></i> Face
+                    </a>
+                </li>
+                <li class="nav__item">
+                  <a href="./hands.html" class="nav__link">
+                      <i class="uil uil-thumbs-up nav__icon"></i> Hands
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="./faceMesh.html" class="nav__link">
+                      <i class="uil uil-head-side nav__icon"></i> FaceMesh
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a href="./pose.html" class="nav__link">
+                      <i class="uil uil-user nav__icon"></i> Pose
+                  </a>
+                </li>
+                
+            </ul>
+            <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+            <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="uil uil-apps"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+  <div style="margin-top: 20px;display: flex;align-items: center;justify-content: space-evenly;flex-wrap: wrap-reverse;">
+      <video class="input_video1" style="margin-bottom: 10px;"></video>
+        <canvas class="output1" width="480px" height="480px" style="overflow-x: hidden;"></canvas>
+    </div>
+    
+    <div class="loading">
+      <div class="spinner"></div>
+    </div>
+  </div>
+
+  <div style="visibility: hidden;height: 0;" class="control1">
+  </div>
+
+  <!--==================== FOOTER ====================-->
+  <footer class="footer">
+    <div class="footer__bg">
+        <div class="footer__container container grid">
+            <div>
+                <h1 class="footer__title">Utkarsh</h1>
+                <span class="footer__subtitle">Frontend Developer</span>
+            </div>
+
+            <ul class="footer__links">
+                <li>
+                    <a href="#" class="footer__link">Explore</a>
+                </li>
+                <li>
+                    <a href="https://utkarsh-portfolio.web.app/" target="_blank" class="footer__link">Portfolio</a>
+                </li>
+                <li>
+                    <a href="/#project" class="footer__link">ContactMe</a>
+                </li>
+            </ul>
+
+            <div class="footer__socials">
+                <a href="mailto: utkarsh.singh27800@gmail.com" target="_blank" class="footer__social">
+                    <i class="uil uil-at"></i>
+                </a>
+                
+                <a href="https://www.instagram.com/__utkarsh.singh__/" target="_blank" class="footer__social">
+                    <i class="uil uil-instagram"></i>
+                </a>
+                
+                <a href="https://github.com/utkarsh963741"  target="_blank" class="footer__social">
+                    <i class="uil uil-github-alt"></i>
+                </a>
+            </div>
+        </div>
+
+        <p class="footer__copy">&#169; Utkarsh Singh. All rights reserved</p>
+
+    </div>
+  </footer>
+
+  <!--==================== SCROLL TOP ====================-->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="uil uil-arrow-up scrollup__icon"></i>
+  </a>
+
+  <!--==================== MAIN JS ====================-->
+  <script src="../assets/js/main.js"></script>
+
+  <script type="text/javascript" src="./js/face.js"></script>
+</body>
+</html>

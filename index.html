@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../assets/img/favicon.png">
+
+        <!--==================== UNICONS ====================-->
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        
+        <!--==================== CSS ====================-->
+        <link rel="stylesheet" href="./assets/css/styles.css">
+
+        <title>Computer Vision</title>
+    </head>
+    <body class="dark-theme">
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">Utkarsh</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list grid">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class="uil uil-estate nav__icon"></i> Home
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class="uil uil-cog nav__icon"></i> Features
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#project" class="nav__link">
+                                <i class="uil uil-phone-alt nav__icon"></i> ContactMe
+                            </a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./vision/face.html" class="nav__link">
+                                <i class="uil uil-dna nav__icon"></i> Explore
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    <i class="uil uil-times nav__close" id="nav-close"></i>
+                </div>
+
+                <div class="nav__btns">
+                    <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="uil uil-apps"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HOME ====================-->
+            <section class="home section" id="home">
+                    <div class="home__container container grid">
+                        <div class="home__content">
+                            <div class="home__data">
+                                <div class="vid-container">
+                                    <video src="./assets/img/vid.mp4" muted loop autoplay type="mp4"></video>
+                                    <div class="textBox">
+                                        <h1 class="home__title">Computer</h1>
+                                        <h1 class="home__title">Vision</h1>
+                                        <h3 class="home__subtitle">embeded in your website</h3>
+                                        <p class="home__description">
+                                            enhance web experience using computer vision AI. See it in action then believe.
+                                        </p>
+                                        <a href="./vision/face.html" class="button button--flex">
+                                            Explore Now<i class="uil uil-message button__icon"></i>
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="home__scroll" style="margin-top: 50px;">
+                            <a href="#about" class="home__scroll-button button--flex">
+                                <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                                <span class="home__scroll-name">
+                                    Scroll down
+                                </span>
+                                <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                            </a>
+                        </div>
+                    </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section" id="about">
+                <h2 class="section__title">Multiple Features</h2>
+                <span class="section__subtitle">explore the different type of vision solutions available.</span>
+                <div class="about__container container grid">
+                    <div class="about__data">
+
+                        <div class="about__info">
+                            <div onclick="location.href='./vision/face.html'" style="cursor: pointer;">
+                                <span class="about__info-title">
+                                    <img src="./assets/img/3.png" alt="" style="width: 200px;height: auto;border-radius:5px;">
+                                </span>
+                                <span class="about__info-name">Face Recognition</span>
+                            </div>
+                            <div onclick="location.href='./vision/hands.html'" style="cursor: pointer;">
+                                <span class="about__info-title">
+                                    <img src="./assets/img/1.png" alt="" style="width: 200px;height: auto;border-radius:5px;">
+                                </span>
+                                <span class="about__info-name">Hand Recognition</span>
+                            </div>
+                            <div onclick="location.href='./vision/faceMesh.html'" style="cursor: pointer;">
+                                <span class="about__info-title">
+                                    <img src="./assets/img/2.png" alt="" style="width: 200px;height: auto;border-radius:5px;">
+                                </span>
+                                <span class="about__info-name">FaceMesh Generation</span>
+                            </div>
+                            <div onclick="location.href='./vision/pose.html'" style="cursor: pointer;">
+                                <span class="about__info-title">
+                                    <img src="./assets/img/4.png" alt="" style="width: 200px;height: auto;border-radius:5px;">
+                                </span>
+                                <span class="about__info-name">Pose Detection</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div style="width: 100vw;background: var(--first-color-second);display: flex;align-items: center;justify-content: space-evenly;flex-wrap: wrap-reverse;;margin: 20px 0;">
+                    <div style="width: 50%;;text-align: start;">
+                        <h2 style="color: #FFF;">Designed for Startups & Brands</h2>
+                        <p style="width: 95%;;color: #FFF;">
+                            Just get the code and sit tight, you will witness the power and performance of computer vision. It is simple yet Powerful and Productive technology.
+                            <br>Experience then Believe.
+                        </p>
+
+                        
+                    </div>
+                    <div>
+                        <img src="./assets/img/laptop.png" style="width: 420px; height: 250px; " alt="">
+                    </div>
+                </div>
+        
+            </section>
+
+            <!--==================== PROJECT IN MIND ====================-->
+            <section class="project section" id="project" style="padding-top: 10px;">
+                <div style="width: 100%;display: flex;align-items: center;justify-content: center;flex-direction: column;margin-bottom: 20px;">
+                    <div>
+                        <img src="./assets/img/profile.png" style="width: 100px; height: 100px; border-radius: 50%;background: var(--first-color-second);padding: 2px;" alt="">
+                    </div>
+                    <h2 class="section__title" style="font-size:1.5rem;padding: 0px;">About Me</h2>
+                    <p style="width: 80%;text-align: center;margin-bottom: 40px;">
+                        I'm a Computer Science Engineering Student.<br>I like making things for the web.
+                    </p>
+                </div>
+
+                <div class="project__bg">
+                    <div class="project__container container grid">
+                        <div class="project__data">
+                            <h2 class="project__title" style="padding-top: 10px;">You have a new project</h2>
+                            <p class="project__description">
+                                Contact me now to collaborate.
+                            </p>
+                            <p class="project__description">
+                                <i class="uil uil-phone"></i> +91 7426026261
+                                <br>
+                                <i class="uil uil-at"></i> utkarsh.singh27800@gmail.com
+                                <br>
+                                <i class="uil uil-map-marker"></i> Mysore, Karnataka, India
+                                
+                            </p>
+                            <a href="mailto: utkarsh.singh27800@gmail.com" class="button button--flex button--white">Contact Me
+                                <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__bg">
+                <div class="footer__container container grid">
+                    <div>
+                        <h1 class="footer__title">Utkarsh</h1>
+                        <span class="footer__subtitle">Frontend Developer</span>
+                    </div>
+
+                    <ul class="footer__links">
+                        <li>
+                            <a href="./vision/face.html" class="footer__link">Explore</a>
+                        </li>
+                        <li>
+                            <a href="https://utkarsh-portfolio.web.app/" target="_blank" class="footer__link">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#project" class="footer__link">ContactMe</a>
+                        </li>
+                    </ul>
+
+                    <div class="footer__socials">
+                        <a href="mailto: utkarsh.singh27800@gmail.com" target="_blank" class="footer__social">
+                            <i class="uil uil-at"></i>
+                        </a>
+                        
+                        <a href="https://www.instagram.com/__utkarsh.singh__/" target="_blank" class="footer__social">
+                            <i class="uil uil-instagram"></i>
+                        </a>
+                        
+                        <a href="https://github.com/utkarsh963741"  target="_blank" class="footer__social">
+                            <i class="uil uil-github-alt"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="footer__copy">&#169; Utkarsh Singh. All rights reserved</p>
+
+            </div>
+        </footer>
+        
+        <!--==================== SCROLL TOP ====================-->
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="uil uil-arrow-up scrollup__icon"></i>
+        </a>
+
+        <!--==================== MAIN JS ====================-->
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
